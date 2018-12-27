@@ -1,0 +1,11 @@
+
+*~
+.DS_Store
+__pycache__/
+
+*.mdp
+.vagrant
+*.sqlite3
+
+# これは最後に書かないとダメ。
+!.gitkeep
