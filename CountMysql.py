@@ -8,7 +8,7 @@ import re
 from pprint import pprint
 
 
-class TablesCounter:
+class Counter:
     """全テーブルの Count を表示します。
        アレだぜ、そもそも InnoDB が正確な値を出してくれればよかったんだけどな。"""
 
@@ -62,5 +62,5 @@ if __name__ == '__main__':
         'db'       : '',
         'charset'  : 'utf8',
     }
-    counter = TablesCounter(db_settings)
+    counter = Counter(db_settings)
     pprint(counter.count_tables())
