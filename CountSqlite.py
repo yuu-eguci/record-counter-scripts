@@ -11,7 +11,7 @@ from pprint import pprint
 def count_tables(dbname):
 
     # 接続します。
-    with closing(sqlite3.connect('test.sqlite3')) as con:
+    with closing(sqlite3.connect(dbname)) as con:
 
         # おやくそく。
         con.row_factory = sqlite3.Row
